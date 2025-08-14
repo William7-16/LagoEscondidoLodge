@@ -134,6 +134,13 @@ footer{
         justify-content: center;
     }
 
+.brand {
+    font-size: 1.9rem;
+    white-space: normal;
+    word-break: break-word;
+    text-align: center;
+}
+
     .social-media{
         width: 80%;
         justify-content: space-evenly;
