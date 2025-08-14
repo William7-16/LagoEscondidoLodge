@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Hotel Lago Econdido Lodge</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="menu.css">
+     <link rel="shortcut icon" href="./imagenes/favicon.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+<style>
+    * { 
+        box-sizing: border-box;
+    }
+    
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Archivo';
+        background-color: #f2f2f2;
+    }
+
+    .header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(12, 17, 54, 0.416) 0%, hsla(199, 85%, 16%, 0.374) 100%), url(./imagenes/services.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+   
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    min-width: 600px;
+    margin-right: 10px;
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.amenidades-list, .servicios-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.amenidad, .servicio {
+    font-size: large;
+    font-weight: 700;
+    width: calc(50% - 10px);
+    margin: 5px;
+    text-align: center;
+}
+
+.amenidad img, .servicio img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+p {
+    margin: 10px 0 0;
+}
+
+
+
+@media (max-width: 500px) {
+
+     .header {
+            height: 70vh;
+        }
+    
+    .amenidad, .servicio {
+        width: 100%; 
+    }
+
+}
+    </style>
+</head>
+<body>
+
+      <div id="inicio"></div>
+
+    <header class="header" id="inicio">
+        <img class="hamburguer" src="./imagenes/hamburguesa.svg" alt="">
+        <nav class="menu-navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="habitaciones.html">Habitaciones</a>
+                <a href="Estadías o Servicios.html"> Estadias o Servicios</a>
+                <a href="sobre_nosotros.html">Sobre Nosotros</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo1">Estadia y Servicios</h1>
+        </div>
+        </header>
+  
+    
+   
+
+    <section id="suites">
+        <h2>Suites</h2>
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="./imagenes/habitacion2.avif" alt="Suite Familiar">
+                <p>Suite Familiar</p>
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/hotel1.jpg" alt="Suite Deluxe">
+                <p>Suite Deluxe</p>
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/suite2.jpeg" alt="Suite Doble">
+                <p>Suite Doble</p>
+            </div>
+             <div class="carousel-item">
+                <img src="./imagenes/suite3.jpg" alt="Suite Doble">
+                <p>Suite Premium</p>
+            </div>
+             <div class="carousel-item">
+                <img src="./imagenes/suit1.avif" alt="Suite Doble">
+                <p>Suite Económica</p>
+            </div>
+             <div class="carousel-item">
+                <img src="./imagenes/habitacion.avif" alt="Suite Doble">
+                <p>Suite Ejecutiva</p>
+            </div>
+             <div class="carousel-item">
+                <img src="./imagenes/suite6.jpeg" alt="Suite Doble">
+                <p>Suite Romántica</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="amenidades">
+        <h2>Amenidades</h2>
+        <div class="amenidades-list">
+            <div class="amenidad">
+                <img src="./imagenes2/img2.jpg" alt="Piscina al aire libre">
+                <p>Piscina al aire libre</p>
+            </div>
+            <div class="amenidad">
+                <img src="./imagenes2/img3.jpg" alt="Restaurante">
+                <p>Restaurante con cocina local e internacional</p>
+            </div>
+            <div class="amenidad">
+                <img src="./imagenes2/gym.jpg" alt="Gimnasio">
+                <p>Gimnasio completamente equipado</p>
+            </div>
+            <div class="amenidad">
+                <img src="./imagenes2/spa.jpg" alt="Spa">
+                <p>Servicios de spa y bienestar</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios-adicionales">
+        <h2>Servicios Adicionales</h2>
+        <div class="servicios-list">
+            <div class="servicio">
+                <img src="./imagenes2/transporte.jpg" alt="Transporte">
+                <p>Transporte</p>
+            </div>
+            <div class="servicio">
+                <img src="./imagenes2/servicio24.jpeg" alt="Servicio 24 horas">
+                <p>Servicio de 24 horas</p>
+            </div>
+            <div class="servicio">
+                <img src="./imagenes2/img5.png" alt="Actividades al aire libre">
+                <p>Actividades al aire libre</p>
+            </div>
+            <div class="servicio">
+                <img src="./imagenes2/img6.jpg" alt="Excursiones">
+                <p>Excursiones y actividades guiadas</p>
+            </div>
+        </div>
+    </section>
+
+<footer id="footer">
+        <div class="contenedor footer-content">
+                <div class="contact-us">
+                    <h2 class="brand">LagoEscondidoLodge</h2>
+                    <p>"Experiencias que nunca olvidarás"</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/" class="social-media-icon">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://www.whatsapp.com/" class="social-media-icon">
+                       <i class="bx bxl-whatsapp"></i>
+                    </a> 
+                    <a href="https://www.instagram.com/" class="social-media-icon">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <div id="footer"></div>
+
+    <script src="./js/carrusel.js"></script>
+    <script src="./js/prototipo1.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reseñas de Clientes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: url('https://www.transparenttextures.com/patterns/white-wall.png');
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 48px;
+      margin: 0;
+      color: #333;
+      animation: fadeInDown 1s ease;
+    }
+
+    p.subtitle {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #666;
+      animation: fadeInUp 1s ease;
+    }
+
+    .reviews {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 280px;
+      transition: transform 0.3s ease;
+      animation: fadeIn 1s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #007B7F;
+    }
+
+    .comment {
+      font-size: 16px;
+      color: #444;
+    }
+
+    .feedback {
+      margin-top: 50px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      animation: fadeInUp 1s ease;
+    }
+
+    .feedback textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      resize: none;
+    }
+
+    .feedback button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #007B7F;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .feedback button:hover {
+      background-color: #005f5f;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="icon">💬</div>
+    <h1>Hicieron clic</h1>
+    <p class="subtitle">Ellos disfrutaron la experiencia en Lago Escondido y dejaron su comentario.</p>
+
+    <div class="reviews">
+      <div class="card">
+        <div class="name">Camila</div>
+        <div class="comment">Un lugar mágico, lleno de paz y naturaleza. El servicio fue impecable y el personal muy cálido. ¡Volveré pronto!</div>
+      </div>
+      <div class="card">
+        <div class="name">Mateo</div>
+        <div class="comment">La comida deliciosa, las habitaciones limpias y el entorno espectacular. Ideal para desconectar del mundo.</div>
+      </div>
+      <div class="card">
+        <div class="name">Lucía</div>
+        <div class="comment">Me encantó la atención personalizada. Todo estaba muy bien cuidado. Lo recomiendo con todo el corazón.</div>
+      </div>
+    </div>
+
+    <div class="feedback">
+      <h2>💌 Deja tu comentario</h2>
+      <textarea placeholder="Escribe tu experiencia aquí..."></textarea>
+      <button>Enviar</button>
+    </div>
+  </div>
+
+</body>
+</html>

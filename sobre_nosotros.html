@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nosotros</title>
+  <link rel="stylesheet" href="menu.css">
+  <link rel="shortcut icon" href="./imagenes/favicon.ico" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Archivo';
+     
+    }
+
+     h1 {
+        position: relative;
+        font-size: 3em;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #fff;
+    }
+
+    
+     .header{
+    height: 100vh;
+
+    background-image: linear-gradient(to top, rgba(12, 17, 54, 0.416) 0%, hsla(199, 85%, 16%, 0.374) 100%), url(./imagenes/imagen5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy{
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+    .iconos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: white;
+      padding: 40px 20px;
+      gap: 30px;
+    }
+
+    .icono {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100px;
+      text-align: center;
+      color: #000;
+    }
+
+    .icono img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+
+    .sobre-nosotros {
+      min-width: 300px;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .sobre-nosotros h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .sobre-nosotros p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #444;
+    }
+    .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: steelblue;
+}
+
+.image-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.hotel-image {
+  text-align: center;
+  font-size: 2em ;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.map-container {
+  font-size: 1.5em;
+    flex: 1;
+    text-align: center;
+}
+
+.map-container h2 {
+  color: #fff;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.map-iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container {
+   margin: 80px 0 0 0 ;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #32b7ff, #6083ce);
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  gap: 30px;
+}
+
+.contact-info, .contact-form {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.contact-info h2 {
+  margin-top: 0;
+  font-weight: 700;
+  color: #fff;
+}
+
+.contact-form h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.contact-form p {
+  margin-bottom: 25px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.2);
+}
+
+.checkbox-group {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  background-color: #0b1d2f;
+  color: white;
+  padding: 12px 20px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #142b42;
+}
+
+@media screen and (max-width:500px){
+
+  .header {
+    height: 70vh;
+  }
+    .sobre-nosotros {
+      font-size: 1.5em;
+      margin: 20px 20px;
+  
+    }
+
+}
+
+
+    
+  </style>
+</head>
+<body>
+
+  <div id="inicio"></div>
+      <header class="header" id="inicio">
+   <img class="hamburguer" src="./imagenes/hamburguesa.svg" alt="">
+        <nav class="menu-navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="habitaciones.html">Habitaciones</a>
+                <a href="Estadías o Servicios.html"> Estadias o Servicios</a>
+                <a href="#Ubicación">Ubicación</a>
+                <a href="#Contacto">Contacto</a>
+                <a href="sobre_nosotros.html">Sobre Nosotros</a>
+        </nav>
+         <div class="contenedor head">
+<h1 class="titulo">Sobre Nosotros</h1>
+<p class="copy">Estás a un clic de conocer todas nuestras experiencias</p>
+      </div>
+</header> 
+  <!-- <div class="hero">
+    <div class="overlay"></div>
+    <div class="contenido-hero">
+      <h1>Sobre Nosotros</h1>
+      <p>Estás a un clic de conocer todas nuestras experiencias</p>
+    </div>
+  </div>
+  </div>
+</header> -->
+
+  
+  <div class="iconos">
+    <div class="icono">
+      <img src="https://img.icons8.com/ios-filled/50/yoga.png" alt="GYM">
+      <span>GYM</span>
+    </div>
+    <div class="icono">
+      <img src="https://img.icons8.com/ios-filled/50/wedding-cake.png" alt="Bodas">
+      <span>Bodas</span>
+    </div>
+    <div class="icono">
+      <img src="https://img.icons8.com/ios-filled/50/conference.png" alt="Reuniones">
+      <span>Reuniones</span>
+    </div>
+    <div class="icono">
+      <img src="https://img.icons8.com/ios-filled/50/like.png" alt="Citas">
+      <span>Citas</span>
+    </div>
+    <div class="icono">
+      <img src="https://img.icons8.com/ios-filled/50/beach.png" alt="Vacaciones">
+      <span>Vacaciones</span>
+    </div>
+  </div>
+
+  
+  <div class="sobre-nosotros">
+    <h2>Sobre nosotros</h2>
+    <p>
+    Ubicado frente al impresionante Lago de Coatepeque, nuestro hotel es el lugar perfecto para escapar del bullicio de la ciudad y disfrutar de una experiencia única de descanso y conexión con la naturaleza. Te ofrecemos habitaciones totalmente equipadas, gastronomía local, spa, piscina con vista al lago y un ambiente tranquilo que invita a relajarte. Con servicio personalizado, check-in y check-out exprés, estacionamiento gratuito y espacios al aire libre ideales para compartir, somos el destino perfecto tanto para vacaciones, viajes de negocios como para eventos especiales. En nuestro hotel, cada estadía se convierte en un recuerdo inolvidable.</p>
+
+      <p>Contamos con todo lo necesario para una estadía placentera, donde tú serás el protagonista.
+      Nuestras habitaciones 100% equipadas a tus necesidades, comida, spa, piscina de agua dulce y
+      salada en un clima fresco y lleno de vida, es sinónimo de descanso sin
+      expectativas.</p><br><br>
+      <p>Tenemos servicio de habitaciones con personal capacitado, registro de entrada y salida exprés y
+      mobiliario exterior. Además, puedes disfrutar de nuestra piscina, lo que nos convierte en la mejor
+      opción dentro de La Libertad, El Salvador para acoger a nuestros huéspedes con todo lo que
+      necesitan. Contamos con parking gratuito disponible.</p><br><br>
+      <p>Contamos con disponibilidad para estadías, viajes de negocios, eventos sociales y todo lo
+      necesario para hacer de tu viaje a La Libertad, un paraíso para recordar.</p>
+    </p>
+  </div>
+
+  <section id="Ubicación" class="section"></section>
+
+<div class="container">
+    <div class="image-container">
+        <img src="./imagenes/hotel1.jpg" alt="Hotel en el Lago de Coatepeque" class="hotel-image">
+    </div>
+    <div class="map-container">
+        <h2 class="map-container h2">¿Cómo llegar?</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41479.77058638996!2d-89.58890579679898!3d13.863197289693774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62dcd48bbf3581%3A0xcbb51df50ff589a9!2sLago%20de%20Coatepeque!5e1!3m2!1ses-419!2ssv!4v1754529153246!5m2!1ses-419!2ssv" class="map-iframe"></iframe>
+    </div>
+</div>
+
+  
+
+        <script src="./js/prototipo1.js"></script>
+</body>
+</html>
+
+<div class="contact-container">
+  <div class="contact-info">
+
+    <h2><i class='bx  bx-location'  ></i>   Ubicación</h2>
+    <p>Km. 41.5 Carretera Litoral, La Libertad</p>
+
+    <h2><i class='bx  bx-phone'  ></i>  Reservaciones</h2>
+    <p><i class="bx bxl-whatsapp"></i>  WhatsApp: (503) 7199 6230</p>
+    <p><i class='bx  bx-phone'  ></i>  Tel: (503) 7603 8596</p>
+
+    <h2><i class='bx bxl-instagram' ></i>    Instagram</h2>
+    <p>@hotel_Loget</p>
+
+    <h2 ><i class='bx bxl-facebook'></i>  Facebook</h2>
+    <p>@hotel_Loget</p>
+  </div>
+
+   <section id="Contacto" class="section"></section>
+  <div class="contact-form">
+    <h2>Contáctanos</h2>
+    <p>Estás a un clic de nuevas experiencias</p>
+    <form>
+      <div class="input-group">
+        <input type="text" placeholder="Nombre" required />
+      </div>
+      <div class="input-group">
+        <input type="email" placeholder="Email" required />
+      </div>
+      <div class="input-group">
+        <input type="tel" placeholder="Número de teléfono" required />
+      </div>
+      <div class="input-group">
+        <select required>
+          <option disabled selected>-- Motivo de contacto --</option>
+          <option>Reserva</option>
+          <option>Información</option>
+          <option>Comentarios</option>
+        </select>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="robot" />
+        <label for="robot">No soy un robot</label>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
